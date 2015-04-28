@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/accelsensorname"
+        android:textSize="20sp"
+		android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_accelsensorname" />
+    
+    <TextView
+        android:id="@+id/gyrosensorname"
+        android:textSize="20sp"
+		android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_gyrosensorname" />
+
+	<CheckBox android:id="@+id/cb_sampling"
+          android:paddingBottom="10px"
+          android:paddingTop="10px"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/cb_sampling_text" />
+    
+    <TextView
+        android:id="@+id/state"
+        android:textSize="20sp"
+		android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+	
+	<TextView
+        android:id="@+id/samplecounter"
+        android:textSize="20sp"
+		android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+    
+	<aexp.gyroaccel.BallPanel 	    
+        android:id="@+id/ball"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:visibility="invisible" >
+	</aexp.gyroaccel.BallPanel>    		
+</LinearLayout>
