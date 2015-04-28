@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/paller/workspaces/android_dev/gyroaccel/src/aexp/gyroaccel/ISamplingService.aidl
+ * Original file: C:\\Test\\gyroaccel\\src\\aexp\\gyroaccel\\ISamplingService.aidl
  */
 package aexp.gyroaccel;
 public interface ISamplingService extends android.os.IInterface
@@ -23,13 +23,13 @@ public static aexp.gyroaccel.ISamplingService asInterface(android.os.IBinder obj
 if ((obj==null)) {
 return null;
 }
-android.os.IInterface iin = (android.os.IInterface)obj.queryLocalInterface(DESCRIPTOR);
+android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
 if (((iin!=null)&&(iin instanceof aexp.gyroaccel.ISamplingService))) {
 return ((aexp.gyroaccel.ISamplingService)iin);
 }
 return new aexp.gyroaccel.ISamplingService.Stub.Proxy(obj);
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return this;
 }
@@ -91,7 +91,7 @@ Proxy(android.os.IBinder remote)
 {
 mRemote = remote;
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return mRemote;
 }
@@ -99,7 +99,7 @@ public java.lang.String getInterfaceDescriptor()
 {
 return DESCRIPTOR;
 }
-public void setCallback(android.os.IBinder binder) throws android.os.RemoteException
+@Override public void setCallback(android.os.IBinder binder) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -114,7 +114,7 @@ _reply.recycle();
 _data.recycle();
 }
 }
-public void removeCallback() throws android.os.RemoteException
+@Override public void removeCallback() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -128,7 +128,7 @@ _reply.recycle();
 _data.recycle();
 }
 }
-public void stopSampling() throws android.os.RemoteException
+@Override public void stopSampling() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -142,7 +142,7 @@ _reply.recycle();
 _data.recycle();
 }
 }
-public boolean isSampling() throws android.os.RemoteException
+@Override public boolean isSampling() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -159,7 +159,7 @@ _data.recycle();
 }
 return _result;
 }
-public int getState() throws android.os.RemoteException
+@Override public int getState() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();

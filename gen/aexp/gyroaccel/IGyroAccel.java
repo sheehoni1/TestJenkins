@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/paller/workspaces/android_dev/gyroaccel/src/aexp/gyroaccel/IGyroAccel.aidl
+ * Original file: C:\\Test\\gyroaccel\\src\\aexp\\gyroaccel\\IGyroAccel.aidl
  */
 package aexp.gyroaccel;
 public interface IGyroAccel extends android.os.IInterface
@@ -23,13 +23,13 @@ public static aexp.gyroaccel.IGyroAccel asInterface(android.os.IBinder obj)
 if ((obj==null)) {
 return null;
 }
-android.os.IInterface iin = (android.os.IInterface)obj.queryLocalInterface(DESCRIPTOR);
+android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
 if (((iin!=null)&&(iin instanceof aexp.gyroaccel.IGyroAccel))) {
 return ((aexp.gyroaccel.IGyroAccel)iin);
 }
 return new aexp.gyroaccel.IGyroAccel.Stub.Proxy(obj);
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return this;
 }
@@ -80,7 +80,7 @@ Proxy(android.os.IBinder remote)
 {
 mRemote = remote;
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return mRemote;
 }
@@ -88,7 +88,7 @@ public java.lang.String getInterfaceDescriptor()
 {
 return DESCRIPTOR;
 }
-public void sampleCounter(int count) throws android.os.RemoteException
+@Override public void sampleCounter(int count) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 try {
@@ -100,7 +100,7 @@ finally {
 _data.recycle();
 }
 }
-public void statusMessage(int state) throws android.os.RemoteException
+@Override public void statusMessage(int state) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 try {
@@ -112,7 +112,7 @@ finally {
 _data.recycle();
 }
 }
-public void diff(double x, double y, double z) throws android.os.RemoteException
+@Override public void diff(double x, double y, double z) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 try {
